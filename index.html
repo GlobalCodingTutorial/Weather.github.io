@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=0.68">
+  <title>about page</title>
+</head>
+<body> 
+ <header>
+  <div class="logo">
+     <a href="index.html">
+      <img src="image/image.png" alt="logo">
+     </a>
+  </div>
+  <h1>WEATHER FORECAST </h1>
+  <nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about redirect page/about.html">About</a></li>
+          <li><a href="contact redirect page/contact.html">Contact</a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Settings</button>
+            <div class="dropdown-content">
+              <a href="/theme redirect page/theme.html">Light theme</a>
+            </div>
+          </div>
+        </ul>
+     </nav>
+ </header>
+ <h4>
+  <div id="calendar">
+  </div>
+  <div class="clock">
+  <div id="time"></div>
+  </div>
+ </h4>
+<div class="container">
+ <div class="weather-input">
+   <h3 style="color:white;">Enter a City Name</h3>
+   <input class="city-input" type="text" placeholder="Enter city or country">
+   <button class="search-btn">Search</button>
+   <div class="separator"></div>
+   <button class="location-btn">Use Current Location</button>
+ </div>
+ <div class="weather-data">
+   <div class="current-weather">
+     <div class="details">
+       <h2>(  )</h2>
+       <h6>Temperature: °C</h6>
+       <h6>Wind:  M/S</h6>
+       <h6>Humidity: %</h6>
+       <h6>Pesssure: Pa</h6>
+     </div>
+   </div>
+   <div class="days-forecast">
+     <h2 style="color:white;">5-Day Forecast</h2>
+     <ul class="weather-cards">
+       <li class="card">
+         <h3>( )</h3>
+         <h6>Temp: C</h6>
+         <h6>Wind:  M/S</h6>
+         <h6>Humidity: %</h6>
+         <h6>Pesssure: Pa</h6>
+        
+       </li>
+       <li class="card">
+         <h3>( )</h3>
+         <h6>Temp: C</h6>
+         <h6>Wind:  M/S</h6>
+         <h6>Humidity: %</h6>
+         <h6>Pesssure: Pa</h6>
+       
+       </li>
+       <li class="card">
+         <h3>( )</h3>
+         <h6>Temp: C</h6>
+         <h6>Wind:  M/S</h6>
+         <h6>Humidity: %</h6>
+         <h6>Pesssure: Pa</h6>
+         
+       </li>
+       <li class="card">
+         <h3>( )</h3>
+         <h6>Temp: C</h6>
+         <h6>Wind:  M/S</h6>
+         <h6>Humidity: %</h6>
+         <h6>Pesssure: Pa</h6>
+       
+       </li>
+       <li class="card">
+         <h3>( )</h3>
+         <h6>Temp: C</h6>
+         <h6>Wind:  M/S</h6>
+         <h6>Humidity: %</h6>
+         <h6>Pesssure: Pa</h6>
+       </li>
+     </ul>
+   </div>
+ </div>
+</div>
+<div class="converter-container">
+ <h2>Unit Converter</h2>
+ <div class="input-container">
+     <label for="temperature">Temperature (°C)</label>
+     <input type="number" id="temperature" placeholder="Enter temperature">
+     <button onclick="convertTemperature()">Convert</button>
+     <span id="convertedTemperature"></span>
+ </div>
+ <div class="input-container">
+     <label for="windSpeed">Wind Speed (m/s)</label>
+     <input type="number" id="windSpeed" placeholder="Enter wind speed">
+     <button onclick="convertWindSpeed()">Convert</button>
+     <span id="convertedWindSpeed"></span>
+ </div>
+ <div class="input-container">
+     <label for="humidity">Humidity (%)</label>
+     <input type="number" id="humidity" placeholder="Enter humidity">
+     <button onclick="convertHumidity()">Convert</button>
+     <span id="convertedHumidity"></span>
+ </div>
+ <div class="input-container">
+     <label for="pressure">Pressure (Pascal)</label>
+     <input type="number" id="pressure" placeholder="Enter pressure">
+     <button onclick="convertPressure()">Convert</button>
+     <span id="convertedPressure"></span>
+ </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<script src="script.js"></script>
+</body>
+</html>
