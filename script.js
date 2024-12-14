@@ -135,34 +135,3 @@ function updateTime() {
   }
   displayCalendar();
 
-
-  
-    
-// Temperature converter function (Celsius to Kelvin)
-function convertTemperature() {
-    const celsius = parseFloat(document.getElementById('temperature').value);
-    const kelvin = celsius + 273.15;
-    document.getElementById('convertedTemperature').textContent = kelvin.toFixed(2) + ' K';
-  }
-  
-  // Wind speed converter function (m/s to km/h)
-  function convertWindSpeed() {
-    const metersPerSecond = parseFloat(document.getElementById('windSpeed').value);
-    const kilometersPerHour = metersPerSecond * 3.6;
-    document.getElementById('convertedWindSpeed').textContent = kilometersPerHour.toFixed(2) + ' km/h';
-  }
-  
-  // Humidity converter function (% to g/m^3)
-  function convertHumidity() {
-    const humidityPercentage = parseFloat(document.getElementById('humidity').value);
-    const gramsPerCubicMeter = humidityPercentage * 10; // Assuming standard conditions
-    document.getElementById('convertedHumidity').textContent = gramsPerCubicMeter.toFixed(2) + ' g/m³';
-  }
-  
-  // Pressure converter function (Pascal to psi)
-  function convertPressure() {
-    const pascal = parseFloat(document.getElementById('pressure').value);
-    const psi = pascal * 0.000145038;
-    document.getElementById('convertedPressure').textContent = psi.toFixed(2) + ' psi';
-  }
-  
